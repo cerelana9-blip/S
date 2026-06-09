@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aktivasi Bot AI API66</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        min-height:100vh;
+        background:linear-gradient(135deg,#0f172a,#1e293b);
+        padding:20px;
+    }
+
+    .container{
+        text-align:center;
+        width:100%;
+        max-width:500px;
+    }
+
+    .btn{
+        width:100%;
+        padding:18px 25px;
+        font-size:1.2rem;
+        font-weight:bold;
+        color:#fff;
+        background:#22c55e;
+        border:none;
+        border-radius:12px;
+        cursor:pointer;
+        transition:0.3s;
+    }
+
+    .btn:hover{
+        background:#16a34a;
+        transform:scale(1.03);
+    }
+
+    .message{
+        margin-top:20px;
+        padding:15px;
+        background:#fff;
+        border-radius:10px;
+        color:#111827;
+        font-weight:bold;
+        display:none;
+        animation:fadeIn 0.4s ease;
+    }
+
+    @keyframes fadeIn{
+        from{
+            opacity:0;
+            transform:translateY(10px);
+        }
+        to{
+            opacity:1;
+            transform:translateY(0);
+        }
+    }
+
+    @media (max-width:480px){
+        .btn{
+            font-size:1rem;
+            padding:16px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <button class="btn" onclick="showMessage()">
+        AKTIVASI BOT AI API66
+    </button>
+
+    <div class="message" id="message">
+        DAFTAR API66 , GARANSI 100% JIKA BONCOS
+    </div>
+</div>
+
+<script>
+function showMessage() {
+    document.getElementById("message").style.display = "block";
+}
+</script>
+
+</body>
+</html>
