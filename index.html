@@ -1,33 +1,62 @@
-<p class="subtitle">
-    Artificial Intelligence • Smart Automation • AI Assistant
-</p>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BOT AI API66</title>
 
-<div class="garansi">
-    🛡️ GARANSI 100% KALAU BONCOS
-</div>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 
-<br>
+<!-- hubungkan CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
 
-<button id="btnAktivasi" class="btn" onclick="aktivasiBot()">
-    🚀 AKTIVASI BOT AI API66
-</button>
+<body>
 
-<div class="popup" id="popup">
+<div class="container">
 
-    <h2 class="glow">✅ DAFTAR API66</h2>
+    <div class="ai-icon">🤖</div>
 
-    <br>
+    <div class="title">BOT AI API66</div>
 
-    <p style="font-size:18px;font-weight:bold;">
-        GARANSI 100% JIKA BONCOS
-    </p>
-
-    <div class="ai-status">
-        ● AI SYSTEM CONNECTED
+    <div class="subtitle">
+        Artificial Intelligence • Smart Automation
     </div>
 
-    <div class="loading">
-        Redirecting...
+    <!-- GARANSI sebelum klik -->
+    <div class="garansi">
+        🛡️ GARANSI 100% KALAU BONCOS
+    </div>
+
+    <button id="btn" class="btn" onclick="aktivasi()">
+        🚀 AKTIVASI BOT AI API66
+    </button>
+
+    <div class="popup" id="popup">
+        <h2 class="glow">✅ DAFTAR API66</h2>
+        <p>GARANSI 100% JIKA BONCOS</p>
+        <div class="loading">Redirecting...</div>
     </div>
 
 </div>
+
+<script>
+function aktivasi(){
+
+    const btn = document.getElementById("btn");
+    const popup = document.getElementById("popup");
+
+    popup.style.display = "block";
+
+    btn.classList.add("success");
+    btn.innerHTML = "✅ AKTIVASI BERHASIL";
+    btn.disabled = true;
+
+    setTimeout(() => {
+        window.location.href = "https://example.com";
+    }, 1000);
+}
+</script>
+
+</body>
+</html>
