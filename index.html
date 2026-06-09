@@ -7,7 +7,6 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 
-<!-- hubungkan CSS -->
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -23,10 +22,10 @@
         Artificial Intelligence • Smart Automation
     </div>
 
-    <!-- GARANSI sebelum klik -->
-    <div class="garansi">
-        🛡️ GARANSI 100% KALAU BONCOS
-    </div>
+    <!-- TOMBOL GARANSI (BISA DIKLIK) -->
+    <button class="garansi-btn" onclick="redirect()">
+        🛡️ KLIK DI SINI - GARANSI 100% KALAU BONCOS
+    </button>
 
     <button id="btn" class="btn" onclick="aktivasi()">
         🚀 AKTIVASI BOT AI API66
@@ -41,6 +40,12 @@
 </div>
 
 <script>
+const linkTujuan = "https://example.com";
+
+function redirect(){
+    window.location.href = linkTujuan;
+}
+
 function aktivasi(){
 
     const btn = document.getElementById("btn");
@@ -53,7 +58,7 @@ function aktivasi(){
     btn.disabled = true;
 
     setTimeout(() => {
-        window.location.href = "https://example.com";
+        window.location.href = linkTujuan;
     }, 1000);
 }
 </script>
