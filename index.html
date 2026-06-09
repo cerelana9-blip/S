@@ -1,11 +1,272 @@
-<div class="popup" id="popup">
-    <h2 class="glow">✅ DAFTAR API66</h2>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AKTIVASI BOT AI API66</title>
 
-    <div class="garansi">
-        🛡️ GARANSI 100% KALAU BONCOS
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Orbitron',sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    background:#050816;
+}
+
+/* Background AI Grid */
+body::before{
+    content:"";
+    position:absolute;
+    width:200%;
+    height:200%;
+    background:
+    radial-gradient(circle,#00ffff22 1px,transparent 1px);
+    background-size:40px 40px;
+    animation:moveGrid 15s linear infinite;
+}
+
+@keyframes moveGrid{
+    from{
+        transform:translate(0,0);
+    }
+    to{
+        transform:translate(-80px,-80px);
+    }
+}
+
+.container{
+    position:relative;
+    z-index:2;
+    text-align:center;
+    width:90%;
+    max-width:600px;
+    padding:35px;
+    border-radius:25px;
+    border:1px solid rgba(0,255,255,.3);
+    backdrop-filter:blur(15px);
+    background:rgba(10,20,40,.7);
+    box-shadow:
+        0 0 20px #00ffff55,
+        0 0 60px #00ffff22;
+}
+
+.ai-icon{
+    font-size:70px;
+    margin-bottom:15px;
+    animation:float 2s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-10px);
+    }
+}
+
+.title{
+    color:#00ffff;
+    font-size:1.8rem;
+    text-shadow:0 0 15px #00ffff;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#cbd5e1;
+    margin-bottom:30px;
+    font-size:.9rem;
+}
+
+.btn{
+    width:100%;
+    border:none;
+    cursor:pointer;
+    padding:18px;
+    border-radius:15px;
+    font-size:1.1rem;
+    font-weight:bold;
+    color:white;
+    background:linear-gradient(90deg,#00ffff,#0066ff);
+    box-shadow:
+        0 0 15px #00ffff,
+        0 0 35px #0066ff;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+.btn.success{
+    background:linear-gradient(90deg,#00c853,#00ff99);
+    box-shadow:
+        0 0 20px #00ff99,
+        0 0 40px #00ff99;
+}
+
+.popup{
+    display:none;
+    margin-top:25px;
+    padding:20px;
+    border-radius:15px;
+    border:1px solid #00ffff;
+    background:rgba(0,255,255,.1);
+    color:white;
+    animation:showUp .5s ease;
+}
+
+@keyframes showUp{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.glow{
+    color:#00ff99;
+    text-shadow:
+        0 0 10px #00ff99,
+        0 0 20px #00ff99;
+}
+
+.garansi{
+    margin-top:15px;
+    padding:15px;
+    border-radius:12px;
+    font-size:1rem;
+    font-weight:bold;
+    background:linear-gradient(90deg,#00c853,#00ff99);
+    color:#fff;
+    box-shadow:
+        0 0 15px #00ff99,
+        0 0 30px #00ff99;
+    animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.03);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
+.ai-status{
+    margin-top:15px;
+    color:#00ff99;
+    font-size:.8rem;
+    animation:blink 1.2s infinite;
+}
+
+@keyframes blink{
+    50%{
+        opacity:.4;
+    }
+}
+
+.loading{
+    margin-top:15px;
+    color:#00ffff;
+    font-size:.8rem;
+}
+
+@media(max-width:600px){
+
+    .title{
+        font-size:1.3rem;
+    }
+
+    .btn{
+        font-size:1rem;
+    }
+
+    .ai-icon{
+        font-size:55px;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="ai-icon">🤖</div>
+
+    <h1 class="title">BOT AI API66</h1>
+
+    <p class="subtitle">
+        Artificial Intelligence • Smart Automation • AI Assistant
+    </p>
+
+    <button id="btnAktivasi" class="btn" onclick="aktivasiBot()">
+        🚀 AKTIVASI BOT AI API66
+    </button>
+
+    <div class="popup" id="popup">
+
+        <h2 class="glow">✅ DAFTAR API66</h2>
+
+        <br>
+
+        <p style="font-size:18px;font-weight:bold;">
+            GARANSI 100% JIKA BONCOS
+        </p>
+
+        <div class="garansi">
+            🛡️ GARANSI 100% KALAU BONCOS
+        </div>
+
+        <div class="ai-status">
+            ● AI SYSTEM CONNECTED
+        </div>
+
+        <div class="loading">
+            Redirecting...
+        </div>
+
     </div>
 
-    <div class="ai-status">
-        ● AI SYSTEM CONNECTED
-    </div>
 </div>
+
+<script>
+function aktivasiBot(){
+
+    const btn = document.getElementById("btnAktivasi");
+    const popup = document.getElementById("popup");
+
+    popup.style.display = "block";
+
+    btn.classList.add("success");
+    btn.innerHTML = "✅ AKTIVASI BERHASIL";
+    btn.disabled = true;
+
+    // GANTI URL DI BAWAH INI
+    setTimeout(function(){
+        window.location.href = "https://example.com";
+    },1000);
+
+}
+</script>
+
+</body>
+</html>
